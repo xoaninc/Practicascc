@@ -6,14 +6,15 @@
 /*   By: juamacia <juamacia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 22:06:32 by juamacia          #+#    #+#             */
-/*   Updated: 2025/11/13 22:18:29 by juamacia         ###   ########.fr       */
+/*   Updated: 2025/11/14 00:47:44 by juamacia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
-	else
-		return (0);
+	return (0);
 }

@@ -6,27 +6,21 @@
 #    By: juamacia <juamacia@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/13 22:27:55 by juamacia          #+#    #+#              #
-#    Updated: 2025/11/13 22:28:18 by juamacia         ###   ########.fr        #
+#    Updated: 2025/11/13 23:10:37 by juamacia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME = libft.a
 
-PART1 = ft_tolower.c ft_toupper.c ft_isprint.c ft_isascii.c ft_isalnum.c \
-		ft_isdigit.c ft_isalpha.c ft_atoi.c ft_strlen.c ft_strlcat.c \
-		ft_strncmp.c ft_strdup.c ft_calloc.c ft_memcpy.c ft_strchr.c \
-		ft_strrchr.c ft_strnstr.c ft_bzero.c ft_memchr.c ft_memcmp.c \
-		ft_memset.c ft_memmove.c ft_strlcpy.c
+PART1 =
 
-PART2 = ft_itoa.c ft_strjoin.c ft_split.c ft_striteri.c ft_strmapi.c \
-		ft_substr.c ft_strtrim.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
-		ft_putnbr_fd.c
+PART2 =
 
-BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c \
-		ft_lstiter.c ft_lstmap.c ft_lstsize.c ft_lstlast.c
+BONUS =
 
-SRC = ${PART1} ${PART2}
+# Compile only the .c files that actually exist in the directory
+SRC = $(wildcard *.c)
 
 OBJS = ${SRC:.c=.o}
 BONUS_OBJS = ${BONUS:.c=.o}

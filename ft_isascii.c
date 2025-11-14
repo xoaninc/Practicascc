@@ -6,16 +6,15 @@
 /*   By: juamacia <juamacia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 22:09:18 by juamacia          #+#    #+#             */
-/*   Updated: 2025/11/13 22:09:59 by juamacia         ###   ########.fr       */
+/*   Updated: 2025/11/14 00:50:00 by juamacia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-int    ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if (c >= 0 && c <= 127)
-        return (1);
-    return (0);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

@@ -6,14 +6,15 @@
 /*   By: juamacia <juamacia@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 22:09:23 by juamacia          #+#    #+#             */
-/*   Updated: 2025/11/13 22:18:29 by juamacia         ###   ########.fr       */
+/*   Updated: 2025/11/14 00:47:49 by juamacia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-        return (1);
-	else
-		return (0);
+		return (1);
+	return (0);
 }
